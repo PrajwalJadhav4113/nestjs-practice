@@ -21,48 +21,4 @@ import { MongooseModule } from '@nestjs/mongoose';
 })
 export class AppModule {}
 
-// import { Module } from '@nestjs/common';
-// import { AppController } from './app.controller';
-// import { AppService } from './app.service';
-// import { UserController } from './user/user.controller';
-// import { ProductService } from './product/product.service';
-// import { ProductController } from './product/product.controller';
-// import { EmployeeModule } from './employee/employee.module';
-// import { CategoryModule } from './category/category.module';
-// import { StudentModule } from './student/student.module';
-// import { CustomerModule } from './customer/customer.module';
-// import { MynameController } from './myname/myname.controller';
-// import { ExceptionController } from './exception/exception.controller';
-// import { ConfigModule, ConfigService } from '@nestjs/config';
-// import { MongooseModule } from '@nestjs/mongoose';
-
-// @Module({
-//   imports: [
-//     EmployeeModule,
-//     CategoryModule,
-//     StudentModule,
-//     CustomerModule,
-
-//     ConfigModule.forRoot({ isGlobal: true }),
-
-//    MongooseModule.forRootAsync({
-//   inject: [ConfigService],
-//   useFactory: (config: ConfigService) => {
-//     console.log('Mongo URI =', config.get('MONGO_URI'));  // 👈 here
-//     return {
-//       uri: config.get<string>('MONGO_URI'),
-//     };
-//   },
-// }),
-//   ],
-//   controllers: [
-//     AppController,
-//     UserController,
-//     ProductController,
-//     MynameController,
-//     ExceptionController,
-//   ],
-//   providers: [AppService, ProductService],
-// })
-// export class AppModule {}
 
